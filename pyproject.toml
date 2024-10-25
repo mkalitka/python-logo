@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "python_logo"
+version = "0.1.0"
+description = "Python Logo interpreter with web-based frontend."
+authors = [
+  "YarynaRachkevych1 <rarynka28@gmail.com>",
+  "mkalitka <mikolaj.kalitka@proton.me>"
+]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+flask = "^3.0.3"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.10.0"
+pylint = "^3.3.1"
+isort = "^5.13.2"
+pytest = "^8.3.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
