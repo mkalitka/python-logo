@@ -85,6 +85,8 @@ These commands allow you to control the pen's state and appearance.
 **setpencolor**
 
     Changes the drawing (pen) color. The color is provided as a string.
+    Available colors are **white**, **black**, **red**,
+    **green**, **blue** and **cyan**.
 
     **Syntax:**
 
@@ -106,7 +108,7 @@ These commands allow you to control the pen's state and appearance.
 
     .. code-block::
 
-       setpensize <expression>
+       setpensize <expr>
 
     **Example:**
 
@@ -127,13 +129,13 @@ These commands control the movement and orientation of the turtle.
 
     .. code-block::
 
-       forward <expression>
+       forward <expr>
 
     or
 
     .. code-block::
 
-       fd <expression>
+       fd <expr>
 
 **backward** (alias: **bk**)
 
@@ -143,13 +145,13 @@ These commands control the movement and orientation of the turtle.
 
     .. code-block::
 
-       backward <expression>
+       backward <expr>
 
     or
 
     .. code-block::
 
-       bk <expression>
+       bk <expr>
 
 **left** (alias: **lt**)
 
@@ -159,13 +161,13 @@ These commands control the movement and orientation of the turtle.
 
     .. code-block::
 
-       left <expression>
+       left <expr>
 
     or
 
     .. code-block::
 
-       lt <expression>
+       lt <expr>
 
 **right** (alias: **rt**)
 
@@ -175,13 +177,13 @@ These commands control the movement and orientation of the turtle.
 
     .. code-block::
 
-       right <expression>
+       right <expr>
 
     or
 
     .. code-block::
 
-       rt <expression>
+       rt <expr>
 
 **setpos**
 
@@ -191,7 +193,7 @@ These commands control the movement and orientation of the turtle.
 
     .. code-block::
 
-       setpos <expression> <expression>
+       setpos <expr> <expr>
 
     **Example:**
 
@@ -233,7 +235,7 @@ These commands allow for conditional execution and looping.
 
     .. code-block::
 
-       repeat <expression> [ <command> ... ]
+       repeat <expr> [ <command> ... ]
 
     **Example:**
 

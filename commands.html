@@ -324,7 +324,9 @@ do not produce a trail.</p>
 </div></blockquote>
 <p><strong>setpencolor</strong></p>
 <blockquote>
-<div><p>Changes the drawing (pen) color. The color is provided as a string.</p>
+<div><p>Changes the drawing (pen) color. The color is provided as a string.
+Available colors are <strong>white</strong>, <strong>black</strong>, <strong>red</strong>,
+<strong>green</strong>, <strong>blue</strong> and <strong>cyan</strong>.</p>
 <p><strong>Syntax:</strong></p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">setpencolor</span> <span class="o">&lt;</span><span class="n">color</span><span class="o">&gt;</span>
 </pre></div>
@@ -338,7 +340,7 @@ do not produce a trail.</p>
 <blockquote>
 <div><p>Sets the thickness of the pen. The provided expression must evaluate to a number.</p>
 <p><strong>Syntax:</strong></p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">setpensize</span> <span class="o">&lt;</span><span class="n">expression</span><span class="o">&gt;</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">setpensize</span> <span class="o">&lt;</span><span class="n">expr</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p><strong>Example:</strong></p>
@@ -354,11 +356,11 @@ do not produce a trail.</p>
 <blockquote>
 <div><p>Moves the turtle forward by the specified number of units.</p>
 <p><strong>Syntax:</strong></p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">forward</span> <span class="o">&lt;</span><span class="n">expression</span><span class="o">&gt;</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">forward</span> <span class="o">&lt;</span><span class="n">expr</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p>or</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">fd</span> <span class="o">&lt;</span><span class="n">expression</span><span class="o">&gt;</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">fd</span> <span class="o">&lt;</span><span class="n">expr</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 </div></blockquote>
@@ -366,11 +368,11 @@ do not produce a trail.</p>
 <blockquote>
 <div><p>Moves the turtle backward by the specified number of units.</p>
 <p><strong>Syntax:</strong></p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">backward</span> <span class="o">&lt;</span><span class="n">expression</span><span class="o">&gt;</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">backward</span> <span class="o">&lt;</span><span class="n">expr</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p>or</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">bk</span> <span class="o">&lt;</span><span class="n">expression</span><span class="o">&gt;</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">bk</span> <span class="o">&lt;</span><span class="n">expr</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 </div></blockquote>
@@ -378,11 +380,11 @@ do not produce a trail.</p>
 <blockquote>
 <div><p>Rotates the turtle to the left by the specified angle in degrees.</p>
 <p><strong>Syntax:</strong></p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">left</span> <span class="o">&lt;</span><span class="n">expression</span><span class="o">&gt;</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">left</span> <span class="o">&lt;</span><span class="n">expr</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p>or</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">lt</span> <span class="o">&lt;</span><span class="n">expression</span><span class="o">&gt;</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">lt</span> <span class="o">&lt;</span><span class="n">expr</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 </div></blockquote>
@@ -390,11 +392,11 @@ do not produce a trail.</p>
 <blockquote>
 <div><p>Rotates the turtle to the right by the specified angle in degrees.</p>
 <p><strong>Syntax:</strong></p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">right</span> <span class="o">&lt;</span><span class="n">expression</span><span class="o">&gt;</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">right</span> <span class="o">&lt;</span><span class="n">expr</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p>or</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">rt</span> <span class="o">&lt;</span><span class="n">expression</span><span class="o">&gt;</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">rt</span> <span class="o">&lt;</span><span class="n">expr</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 </div></blockquote>
@@ -402,7 +404,7 @@ do not produce a trail.</p>
 <blockquote>
 <div><p>Moves the turtle to a new absolute position specified by x and y coordinates.</p>
 <p><strong>Syntax:</strong></p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">setpos</span> <span class="o">&lt;</span><span class="n">expression</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">expression</span><span class="o">&gt;</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">setpos</span> <span class="o">&lt;</span><span class="n">expr</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">expr</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p><strong>Example:</strong></p>
@@ -435,7 +437,7 @@ and more complex expressions) and prints its result.</p>
 <div><p>Repeats a block of commands a specified number of times. The expression
 determines the number of iterations.</p>
 <p><strong>Syntax:</strong></p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">repeat</span> <span class="o">&lt;</span><span class="n">expression</span><span class="o">&gt;</span> <span class="p">[</span> <span class="o">&lt;</span><span class="n">command</span><span class="o">&gt;</span> <span class="o">...</span> <span class="p">]</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">repeat</span> <span class="o">&lt;</span><span class="n">expr</span><span class="o">&gt;</span> <span class="p">[</span> <span class="o">&lt;</span><span class="n">command</span><span class="o">&gt;</span> <span class="o">...</span> <span class="p">]</span>
 </pre></div>
 </div>
 <p><strong>Example:</strong></p>
